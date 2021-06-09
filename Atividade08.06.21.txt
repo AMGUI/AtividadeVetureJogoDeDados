@@ -1,0 +1,8 @@
+gerar numero aletorio que tenha o valor de dois dados 
+
+gerar um numero aletorio que seja menor igual a 12 e maior igual a 1 e exbir na tela 
+
+etapa 1 mostra o numero aletorio, etapa 2 aprimoramento do com botões e interface etapa 3 exibir nome do jogador 
+
+
+
