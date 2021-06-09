@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProjetosDados</string>
+    <string name="numero1">01</string>
+    <string name="textoButao">Jogar</string>
+    <string name="Imgdado">imagem do dado</string>
+</resources>
