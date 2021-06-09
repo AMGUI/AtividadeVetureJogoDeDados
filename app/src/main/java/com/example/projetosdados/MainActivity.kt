@@ -18,23 +18,20 @@ class MainActivity : AppCompatActivity() {
         val image1 = findViewById<ImageView>(R.id.imageDado1)
         val image2 = findViewById<ImageView>(R.id.imageDado2)
 
-        val texto1 = findViewById<TextView>(R.id.textView)
-        val texto2 = findViewById<TextView>(R.id.textView2)
+
 
         val btr    = findViewById<Button>(R.id.button)
 
         btr.setOnClickListener{
-            var numeroGerado = geranumero()
-            texto1.text = numeroGerado.toString()
-            image2.setImageResource(listaImg[numeroGerado-1])
-            numeroGerado = geranumero()
-            texto2.text = numeroGerado.toString()
-            image1.setImageResource(listaImg[numeroGerado-1])
+
+            image2.setImageResource(listaImg[geranumero()])
+
+            image1.setImageResource(listaImg[geranumero()])
         }
 
     }
 
     private fun geranumero(): Int{
-    return (1..6).random()
+    return (0..5).random()
     }
 }
