@@ -2,6 +2,7 @@ package com.example.projetosdados
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -28,7 +29,32 @@ class MainActivity : AppCompatActivity() {
 
             image1.setImageResource(listaImg[geranumero()])
         }
+        Log.i("ciclo de vida","onCreat")
+    }
 
+    override fun onStart() {
+        super.onStart()
+        Log.i("ciclo de vida","onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("ciclo de vida","onresume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("ciclo de vida","onPouse")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("ciclo de vida","onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("ciclo de vida","onDestroy")
     }
 
     private fun geranumero(): Int{
